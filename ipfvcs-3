@@ -1,6 +1,0 @@
-#!/bin/bash
-
-var="pid: 1234"
-var=${var:5}
-echo "$var"
-#thanks for https://stackoverflow.com/a/11470727/5623661
