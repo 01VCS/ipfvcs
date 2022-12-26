@@ -5,6 +5,7 @@ if [ "$1" = "init" ];then
    mkdir .ipfvcs/objects
    echo "Initialized empty ipfvcs repo - note it isn't ready beyond dev testing"
 #   echo "Shouldn't make these dirs in case .ipfvcs already exist"
+   echo "Initialized empty IPFVCS repository in $pwd/.ipfvcs/"
 fi
 
 if [ "$1" = "hash-object" ];then
