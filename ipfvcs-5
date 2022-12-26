@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ "$1" = "init" ];then
+   mkdir .ipfvcs
+   mkdir .ipfvcs/objects
+   echo "Shouldn't make these dirs in case .ipfvcs already exist"
+fi
+
+if [ "$1" = "hash-object" ];then
+if [ "$2" != "--stdin" ];then
+   var="$(ipfs add -q --only-hash $2)"
+   var=${var:2}
+#thanks for https://stackoverflow.com/a/11470727/5623661
+echo "$var"
+
+fi
+fi
+
+if [ "$3" = "-w" ];then
+   mkdir .ipfvcs/objects/$(short=$(echo "${var}" | head -c2))
+   echo "Shouldn't make this dir in case it already exist"
+   cat $2 > .ipfvcs/objects/$(short=$(echo "${var}" | head -c2))/$(short=$(echo "${short}" | head -c2))
+   echo "Shouldn't make this file in case it already exist"
+#thanks for https://stackoverflow.com/a/1405641/5623661
+fi

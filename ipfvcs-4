@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$1" = "hash-object" ];then
+if [ "$2" != "--stdin" ];then
+   var="$(ipfs add -q --only-hash $2)"
+   var=${var:2}
+#thanks for https://stackoverflow.com/a/11470727/5623661
+fi
+fi
+
+echo "Content to be folderized:"
+echo "$var"
