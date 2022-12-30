@@ -1,3 +1,16 @@
+- README.md
+- cmds manual both at exec and at README.md
+
 - deduplication first test: fooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar
+https://www.google.com/search?channel=fs&client=ubuntu&q=separate+file+repeated+bytes+into+files
+https://www.google.com/search?channel=fs&client=ubuntu&q=file+find+duplicate+bytes
+https://stackoverflow.com/questions/48276187/find-duplicate-1kb-chunks-from-a-file
+https://stackoverflow.com/questions/16347775/find-duplicate-records-in-large-text-file
+
+- leverage witchlink and deduplicate git/pijul/snow objects themselves!
 
 Insp for deduplication: https://discuss.ipfs.tech/t/draft-common-bytes-standard-for-data-deduplication/6813/14
+
+other/to-organize:
+- built-in git-meta and apply meta at checkout
+- same philosophy of sound patches as of git-rerere/pijul
