@@ -1,3 +1,6 @@
+- modularity/versatility (can export/import/sync to/from git/pijul/snow repo)
 - deduplication
 - support for versioning+deduplicing binaries/compressed files
 - built-in LFS
+- respect metadata of files as part of their history
+- same philosophy of sound patches as of git-rerere/pijul
