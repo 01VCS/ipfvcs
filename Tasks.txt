@@ -1,6 +1,9 @@
 - README.md
 - cmds manual both at exec and at README.md
 
+- not only supporting files, also support folders
+- hash-integrity for snowfs (pijul too?) as git does
+
 - deduplication first test: fooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar
 https://www.google.com/search?channel=fs&client=ubuntu&q=separate+file+repeated+bytes+into+files
 https://www.google.com/search?channel=fs&client=ubuntu&q=file+find+duplicate+bytes
