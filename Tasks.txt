@@ -3,21 +3,29 @@
 
 - immutable log file, that will even contain the creation date of repo
 
+- "ipfvcs add" cmd
+- cmd to remove files/folders from stage
 - initially missing deduplicing, "ipfvcs snapshot/snap/commit" cmd
 - in refs, store file/folder timestamps
 - second commit will diff files
 
+- presentation, for ./ipfvcs
+- --help flag
 - install syswide
+
+- bare repos
+- "ipfvcs checkout" cmd, which will also preserve files' metadata
+- "ipfvcs clone" cmd (use IPFS, display progress)
 
 - README.md
 - cmds manual both at exec and at README.md
 
-- presentation, for ./ipfvcs
-- --help flag
-
 - hash-integrity for snowfs (pijul too?) as git does
 
-- deduplication first test: fooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar
+- "ipfvcs clone" supporting HTTP(S) and SSH
+
+- deduplication first test:
+fooooooooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar (deduplicate every sharedbyte that are >= 46 characters)
 https://www.google.com/search?channel=fs&client=ubuntu&q=separate+file+repeated+bytes+into+files
 https://www.google.com/search?channel=fs&client=ubuntu&q=file+find+duplicate+bytes
 https://stackoverflow.com/questions/48276187/find-duplicate-1kb-chunks-from-a-file
