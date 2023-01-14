@@ -1,7 +1,20 @@
+- hash-object cmd: detect if its a repo or not
+- not only supporting files, also support folders
+
+- immutable log file, that will even contain the creation date of repo
+
+- initially missing deduplicing, "ipfvcs snapshot/snap/commit" cmd
+- in refs, store file/folder timestamps
+- second commit will diff files
+
+- install syswide
+
 - README.md
 - cmds manual both at exec and at README.md
 
-- not only supporting files, also support folders
+- presentation, for ./ipfvcs
+- --help flag
+
 - hash-integrity for snowfs (pijul too?) as git does
 
 - deduplication first test: fooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar
