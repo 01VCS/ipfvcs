@@ -1,4 +1,5 @@
 - modularity/versatility (can export/import/sync to/from git/pijul/snow repo)
+- despite IPFVCS isn't made by the creator of Linux, unlike git it strictly follows Linux's phil(esystem)osophy that everything (even folders) are a file
 - can checkout ipfvcs from git/others, which means also checkouting any other
 - can append correction data to existing commits w/o breaking the current merkle tree (edit a commit's title/description, add co-author)
 - deduplication
