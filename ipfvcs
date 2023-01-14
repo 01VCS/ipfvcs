@@ -6,7 +6,26 @@ if [ "$1" = "init" ];then
    mkdir .ipfvcs/objects/files
    mkdir .ipfvcs/objects/files/lfs
    mkdir .ipfvcs/objects/snaps
+   mkdir .ipfvcs/objects/info
+   mkdir .ipfvcs/objects/files/info
+   mkdir .ipfvcs/objects/snaps/info
+   mkdir .ipfvcs/refs
+   mkdir .ipfvcs/refs/heads
+   mkdir .ipfvcs/refs/tags
+#   mkdir .ipfvcs/info
+   mkdir .ipfvcs/hooks
 #   echo "Shouldn't make these dirs in case .ipfvcs already exist"
+cat > .ipfvcs/HEAD <<EOF
+ref: refs/heads/main
+EOF
+cat > .ipfvcs/description <<EOF
+Unnamed repository; edit this file 'description' to name the repository.
+EOF
+cat > .ipfvcs/config <<EOF
+[core]
+	repositoryformatversion = 0
+	bare = false
+EOF
    echo "Initialized empty IPFVCS repository in $(pwd)/.ipfvcs/"
 fi
 
