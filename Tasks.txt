@@ -25,7 +25,7 @@
 - "ipfvcs clone" supporting HTTP(S) and SSH
 
 - deduplication first test:
-fooooooooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar (deduplicate every sharedbyte that are >= 46 characters)
+fooooooooooooooooooooooooooooooooooooooooooo and baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaar (deduplicate every sharedbyte that are >= 44 characters) (have to refer objs without "Qm", to save characters)
 https://www.google.com/search?channel=fs&client=ubuntu&q=separate+file+repeated+bytes+into+files
 https://www.google.com/search?channel=fs&client=ubuntu&q=file+find+duplicate+bytes
 https://stackoverflow.com/questions/48276187/find-duplicate-1kb-chunks-from-a-file
